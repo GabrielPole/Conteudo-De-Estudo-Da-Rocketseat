@@ -1,0 +1,42 @@
+/**
+ * Rota / Recurso
+ */
+
+
+/**
+ * Metodos HTTP
+ * 
+ * GET: Buscar uma informação do back-end
+ * POST: Criar uma informação no back-end
+ * PUT: Alterar uma informação no back-end
+ * DELETE: Deletar uma informação no back-end
+ * 
+ */
+
+ /**
+  * Tipos de parâmetros 
+  * 
+  * Query params: 'http://localhost:3333/users?name=pole' paramentros nomeados enviados na rota após o '?' (filtros, paginação)
+  * Route Params: ''/users/:id' &  'http://localhost:3333/users/1' Parametros ultizados para identificar recursos.
+  * Request Params:  Corpo da requisição, ultilizado para criar ou alterar recursos.
+  */
+
+
+  /**
+   * SQL: mySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server.
+   * NoSQL: MongoDB, CouchDB e etc.
+   * 
+   */
+
+/***
+ * Driver: SELECT * FROM users
+ * Query Builder: Table('user').select('*').where()
+ */
+
+/**informando que é json, é trasforma em algo que é intendivel pela aplicação*/
+app.use(express.json());
+
+/**
+ * o request guarda todos os dados que vem atraves da nossa requisição do usuario 
+ * e o response é o que volta uma resposta para o usuario
+ */
