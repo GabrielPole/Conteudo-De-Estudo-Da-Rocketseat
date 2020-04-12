@@ -40,3 +40,24 @@ app.use(express.json());
  * o request guarda todos os dados que vem atraves da nossa requisição do usuario 
  * e o response é o que volta uma resposta para o usuario
  */
+
+
+/**
+* Query
+* Route
+* Body
+*/
+
+
+celebrate({
+    [Segments.PARAMS]: Joi.object().keys({
+        id: Joi.number().required(),
+    })
+})
+
+
+celebrate({
+    [Segments.HEADERS]: Joi.object({
+        authorization: Joi.string().required(),
+    }).unknown(),
+}),
